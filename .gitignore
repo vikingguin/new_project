@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# venv (lokal halten)
+.venv/
+venv/
+new_project-venv
+
+# Tools / Caches
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+
+# Laufzeit
+logs/
+``
