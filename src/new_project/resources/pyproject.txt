@@ -1,9 +1,9 @@
 [project]
-name = "new_project"
-version = "0.1.0"
-description = "Projektgenerator für Python-Projekte"
+name = "$1"
+version = "$2"
+description = "$3"
 authors = [
-    { name = "Adrian" }
+    { name = "$4" }
 ]
 readme = "README.md"
 requires-python = ">=3.11"
@@ -14,10 +14,10 @@ dependencies = []
 
 # Optional: falls du Skripte/CLI anbieten willst
 [project.scripts]
-new_project = "new_project.app:main"
+$1 = "$1.app:main"
 
 [tool.setuptools.package-data] 
-new_project = ["resources/*"]
+$1 = ["resources/*"]
 
 # Build-System (Standard für moderne Python-Projekte)
 [build-system]

@@ -8,7 +8,7 @@ build/
 # venv (lokal halten)
 .venv/
 venv/
-new_project-venv
+$1-venv
 
 # Tools / Caches
 .mypy_cache/
