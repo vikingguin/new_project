@@ -4,6 +4,7 @@ from .edit_files import edit_readme, edit_app, edit_gitignore, edit_project_init
 from .init_venv import create_venv
 from .init_git import init_git
 from .utils import clear_console
+from .create_link import create_s_link
 
 __all__ = [
     "set_py_path",
@@ -16,5 +17,6 @@ __all__ = [
     "create_venv",
     "init_git",
     "clear_console",
-    "edit_project_init"
+    "edit_project_init",
+    "create_s_link"
 ]

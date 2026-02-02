@@ -17,6 +17,7 @@
 
 ## Projektstruktur
 
+```None
 $1/
 ├── src/                  
 │   └── $1/           
@@ -37,4 +38,4 @@ $1/
 ├── pyproject.toml      
 ├── .gitignore
 └── README.md
-
+```

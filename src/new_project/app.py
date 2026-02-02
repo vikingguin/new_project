@@ -7,7 +7,7 @@ from new_project.utils.get_facts import get_facts
 from new_project.utils.edit_files import edit_readme, edit_app, edit_gitignore, edit_pyproject, edit_project_init
 from new_project.utils.init_venv import create_venv
 from new_project.utils.init_git import init_git
-
+from new_project.utils.create_link import create_s_link
 
 def set_vars() -> Tuple[dict, Dict[str, Path], Dict[str, Path], Dict[str, Path]]:
     """Liest die Projektfakten ein und erzeugt die Pfadstrukturen."""
@@ -41,6 +41,8 @@ def main() -> None:
     edit_project_init(files["project_init"], facts["version"])
     create_venv(Path(dirs["base"]), f"{facts["projectname"]}-venv")
     init_git(dirs["base"])
+    create_s_link(files["activate"], f"{dirs["base"]}/scripts/activate")
+
 
 
 if __name__ == "__main__":
