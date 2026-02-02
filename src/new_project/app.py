@@ -40,8 +40,9 @@ def main() -> None:
     edit_pyproject(files["pyproject"], facts["projectname"], facts["version"], facts["description"], facts["author"])
     edit_project_init(files["project_init"], facts["version"])
     create_venv(Path(dirs["base"]), f"{facts["projectname"]}-venv")
-    init_git(dirs["base"])
     edit_activate_script(files["activate"], facts["projectname"])
+    init_git(dirs["base"])
+    
 
 
 
