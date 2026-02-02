@@ -43,7 +43,8 @@ def set_py_path(path: str, projectname: str) -> Tuple[Dict[str, Path], Dict[str,
         "readme": res_dir / "readme.txt",
         "gitignore": res_dir / "gitignore.txt",
         "pyproject": res_dir / "pyproject.txt",
-        "app": res_dir / "app.txt"
+        "app": res_dir / "app.txt",
+        "project_init": res_dir / "project_init.txt"
     }
 
     return dirs, files, res_files

@@ -53,3 +53,10 @@ def edit_pyproject(file: Path, projectname: str, version: str, desc: str, author
 
     file.parent.mkdir(parents=True, exist_ok=True)
     file.write_text(new_content, encoding="utf-8")
+
+def edit_project_init(file: Path, version: str) -> None:
+    content = load_resource("project_init.txt")
+
+    new_content = content.replace("$1", version)
+    file.parent.mkdir(parents=True, exist_ok=True)
+    file.write_text(new_content, encoding="utf-8")
