@@ -60,3 +60,10 @@ def edit_project_init(file: Path, version: str) -> None:
     new_content = content.replace("$1", version)
     file.parent.mkdir(parents=True, exist_ok=True)
     file.write_text(new_content, encoding="utf-8")
+
+def edit_activate_script(file: Path, projectname: str) -> None:
+    content = load_resource("activate_script.txt")
+
+    new_content = content.replace("$1", projectname)
+    file.parent.mkdir(parents=True, exist_ok=True)
+    file.write_text(new_content, encoding="utf-8")

@@ -37,7 +37,7 @@ def set_py_path(path: str, projectname: str) -> Tuple[Dict[str, Path], Dict[str,
         "scripts_gitkeep": base / "scripts" / ".gitkeep",
         "testing_gitkeep": base / "testing" / ".gitkeep",
         "resources_gitkeet": code / "resources" / ".gitkeep",
-        "activate": base / f"{projectname}-venv" / "bin" / "activate"
+        "activate": base / "scripts" / "activate.sh"
     }
 
     res_files = {
